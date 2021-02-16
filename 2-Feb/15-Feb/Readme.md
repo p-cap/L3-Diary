@@ -81,6 +81,12 @@ const onSubmit = (props) => {
   <img src="Small root.JPG" title="Small div area">
 </p>
 
+<p> I still need more love and care for my frontend </p>
+
+```    @CrossOrigin ``` -> Tech tip number 2 -> declared above ``` @GetMapping ```
 
 
-
+### Things to do tomorrow
+    - Create endpoints to handle searching and pseudo-authentication of the page
+    - try to refactor frontend code ..... it's ugly
+    - start the day with Fibonacci utilizing memoization
