@@ -45,14 +45,41 @@ recursion case
       my CRUD Repository
     - After an hour of trying to figure out my problem, I ended up downloading an new Spring Initializr zip file but this 
       time I added Spring Data JPA and.......it worked
- 
+      
 <p align="center">
   <img src="Spring Initialzr correct package.JPG" title="Spring Boot Initializr Config">
 </p>
-    
-    
 
+```mvnw spring-boot:run``` -> Tech tip number 1
+    
+<p>Now I started the frontend application</p>
+<p> I downloaded the typical Material UI / Create-React-App construct</p>
+<p>I was trying to create a seperate helper function to pull data from my DB but I ended up utilizing the onSubmit function  
+    to do the Http service </p>
 
+```
+const onSubmit = (props) => {
+    axios.get('http://localhost:8080/showUsers')
+        .then(response => {
+            response.data.map(user => {
+                if (user.username == userName && user.password == password) {
+                    return (
+                      setMessage(true)
+                    )
+                }
+            })}
+        )
+    }
+```
+<p> Right now, I am not too happy with my code but I will still try to create a seperate service for the Http Request  
+    Also, the credentials are being authenticated in the frontend......NOT GOOD</p>
+
+<p> Also, I need to figure my root Grid container has a small layout which I think is normal but I need the whole page so I  
+    login box right in the middle of the page</p>
+  
+<p align="center">
+  <img src="Small root.JPG" title="Small div area">
+</p>
 
 
 
