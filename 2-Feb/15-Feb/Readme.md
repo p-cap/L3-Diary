@@ -36,7 +36,7 @@ recursion case
 <p> Today was a very fruitful day because I was able to finish most of my project </p>
 <p> First, I worked on the Spring application to serve as the endpoint for my fullstack project </p>
 
-<p> Here were the steps adn struggles I had when creating Spring Endpoint Application</p>  
+<p> Here were the steps and struggles I had when creating Spring Endpoint Application</p>  
 
     - Spring initializr with Spring Web and PostgreSQL Driver as it's depdencies
     - Followed the tutorial from zetcode https://zetcode.com/springboot/postgresql/
