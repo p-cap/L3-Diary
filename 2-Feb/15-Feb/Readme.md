@@ -29,3 +29,9 @@ Instead of ```return sample_recursion(i - 1) + sample_recursion(i - 2)```, I put
 to see if I can figure out how recursive cases / functions are being called.  
 I think that the functions from the left finishes all their returns then comes the next funciton in  
 recursion case
+
+
+
+# Day 1 of SQL Injection Login Page website
+<p> Today was a very fruitful day because I was able to finish most of my project </p>
+
