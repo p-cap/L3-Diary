@@ -45,9 +45,10 @@ recursion case
       my CRUD Repository
     - After an hour of trying to figure out my problem, I ended up downloading an new Spring Initializr zip file but this 
       time I added Spring Data JPA and.......it worked
-  
  
-    
+<p align="center">
+  <img src="Spring Initialzr correct package.JPG" title="Spring Boot Initializr Config">
+</p>
     
     
 
