@@ -111,5 +111,8 @@ THe code above was my golden ticket to my MVP.
 I inserted valid user and the 1 = 1 -> ```feaddy9' OR '1'='1``` and feaddy9 was a valid user.  
 As you can see that the password field was blank but I was able to retrieve the password due to the response from my application. 
 
-
+### Tasks for tomorrow......17 Feb
+- Refactor the heck out of my applicaiton espcially my frontend.....that Helper file needs some help
+- Try to solve the next problem using recursion and then walkthrough with the whiteboard
+- Make front page more decent looking 
 
