@@ -108,6 +108,8 @@ THe code above was my golden ticket to my MVP.
   <img src="./images/Injection.JPG" width="850"  height="400" title="injection in action">
 </p>
 
+I inserted valid user and the 1 = 1 -> ```feaddy9' OR '1'='1``` and feaddy9 was a valid user.  
+As you can see that the password field was blank but I was able to retrieve the password due to the response from my application. 
 
 
 
