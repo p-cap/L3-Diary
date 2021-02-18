@@ -37,3 +37,45 @@ print(coinChange(23, coins) == 5)
 print(coinChange(45, coins) == 3)
 print(coinChange(74, coins) == 8)
 ```
+The comments provide what my thought process was  
+
+## Hmmmmmm....struggled with parent to child component props and creating a helper file for my HttpService 
+Right now, the only improvement I have with my code is the fact that my HttpService file is now a seperate file   
+```
+import DisplayResponse from './DisplayResponse'
+
+var validatedUsername
+var validatedPassword
+var responseData
+const axios = require('axios')
+
+export default function HttpService(props) {
+    axios.post('http://localhost:8080/inject', {
+        username: props.data.username,
+        password: props.data.password
+      })
+        .then(response => { 
+            responseData = response.data
+        })
+    return responseData
+    }
+```
+This code is really messy. Wait till you see my App.js file......hidious!  
+I did not make much progress with my full stack project but I definitely have a gameplan!  
+
+##Must DOs
+- Look into trying to apply recursion to my coin change code
+- Create a playground so I can practice props from one component to the other
+- Work on promises especially axios promises
+- Dealing with react returns especially when a typeError occurs with what I am returning. Try to return an object perhaps
+
+
+# STILL A GREAT DAY....it is late right now! Good night
+
+
+
+
+
+
+
+
