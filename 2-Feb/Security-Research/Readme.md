@@ -31,6 +31,6 @@ found 1 high severity vulnerability in 1897 scanned packages
 
 I will try to reproduce the critical vulnerability so I can understand why.
 
-Link below shows the POC of the vulnerability. 
+Link below shows the POC of the vulnerability.  
 https://www.npmjs.com/advisories/1603
 
