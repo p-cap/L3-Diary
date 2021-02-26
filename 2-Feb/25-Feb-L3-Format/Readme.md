@@ -36,5 +36,6 @@ NOTE:
 - Implement: maybe......create sub projects to reinforce my learning
 - Crazy talk: before I sleep, practice in trying to recall what I've done 
 
-
+### Decomposition tasks
+- 
 
