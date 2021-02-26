@@ -25,6 +25,7 @@ NOTE:
 - Schedule your learning => how long will I read the content
 - Review time => review what I just read or did
 - Implement => I create my own tasks to enforce my understanding
+- Crazy talk => talk to yourself to identify what you learned
 
 
 
