@@ -19,7 +19,7 @@ NOTE:
 - Association
 - Review = for example, read content for an hour, then schedule a 5 min review on the content
 
-#### Format for the upcoming L3 
+## Format for the upcoming L3 
 - Preparation => what am I gonna learn the next day 
 - Decomposiion => based on the lesson for the next day, how would you subdivide the content
 - Schedule your learning => how long will I read the content
