@@ -27,6 +27,14 @@ NOTE:
 - Implement => I create my own tasks to enforce my understanding
 - Crazy talk => talk to yourself to identify what you learned
 
+# SAMPLE L3 Annotatition
+- Prep: Advanced IOS Volume 1 - Happy Days - pg 30 - ?
+- Decompose: after an hour, perform decomposition inside the code and identify what I do not understand and apply what I just learned. Also, I can try  
+  to find a stopping even without reaching an hour to reinforce what I learned
+- Schedule: For now, we'll do every hour. I will get to it after the house is inspected
+- Review: My decomposition will serve as my review
+- Implement: maybe......create sub projects to reinforce my learning
+- Crazy talk: before I sleep, practice in trying to recall what I've done 
 
 
 
