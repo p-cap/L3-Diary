@@ -78,4 +78,4 @@ And now we are at the collection view controller....keep in mind, I have not add
 </p>
 
 
-### TO BE CONTINUED
+### TO BE CONTINUED......
