@@ -3,7 +3,7 @@
 ##### Initial View Controller: Navigation Controller in which the Happy Days CollectionView is embedded in
 
 <p align="center">
-  <img src="./Images/Initial VC.png" width="600" height="400" title="hover text">
+  <img src="./Images/Initial VC.png" width="600" height="400" title="Initial VC">
 </p>
 
 ##### But....inside viewDidAppear is the checkPermissions() function
@@ -32,7 +32,7 @@ the vc will show the ViewController that has the FirstRun identifier
 
 
 <p align="center">
-  <img src="./Images/FirstRun StoryBoard ID.png" width="600" height="400" title="hover text">
+  <img src="./Images/FirstRun StoryBoard ID.png" width="600" height="400" title="StoryBoard ID">
 </p>
 
 ```
@@ -60,8 +60,8 @@ NOTE: I am showing changing configurations on info.plist
 
 
 <p align="center">
-  <img src="./Images/NSPhotoLibraryUsageDescription.png" width="300" height="600" title="hover text">
-  <img src="./Images/info.png" width="500" height="600" title="hover text">
+  <img src="./Images/NSPhotoLibraryUsageDescription.png" width="300" height="600" title="Message from Info.plist">
+  <img src="./Images/info.png" width="500" height="600" title="Info.plist">
 </p>
 
 dismisses the VC that was presented modally....GO to CollectionViewController
