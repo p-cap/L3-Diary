@@ -29,6 +29,12 @@ func checkPermissions() {
     }
 ```
 the vc will show the ViewController that has the FirstRun identifier
+
+
+<p align="center">
+  <img src="./Images/FirstRun StoryBoard ID.png" width="600" height="400" title="hover text">
+</p>
+
 ```
  @IBAction func requestPermission(_ sender: Any) {
         requestPhotosPermissions()
@@ -49,11 +55,19 @@ the vc will show the ViewController that has the FirstRun identifier
         }
     }
 ```
-if ALLOW ACCESS TO ALL PHOTOS is selected = ```PHAuthorizationStatus == .authorized```
+if ALLOW ACCESS TO ALL PHOTOS is selected = ```PHAuthorizationStatus == .authorized```   
+NOTE: I am showing changing configurations on info.plist  
+
+
+<p align="center">
+  <img src="./Images/NSPhotoLibraryUsageDescription.png" width="300" height="600" title="hover text">
+  <img src="./Images/info.png" width="500" height="600" title="hover text">
+</p>
+
+dismisses the VC that was presented modally....GO to CollectionViewController
 
 ```
     func authorizationComplete() {
         dismiss(animated: true)
     }
 ```
-dismisses the VC that was presented modally....GO to CollectionViewController
