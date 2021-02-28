@@ -2,3 +2,6 @@
 
 ##### Initial View Controller: Navigation Controller in which the Happy Days CollectionView is embedded in
 
+<p align="center">
+  <img src="./Images/Initial VC.png" width="600" height="400" title="hover text">
+</p>
