@@ -71,3 +71,8 @@ dismisses the VC that was presented modally....GO to CollectionViewController
         dismiss(animated: true)
     }
 ```
+And now we are at the collection view controller....keep in mind, I have not added any photos yet...
+
+<p align="center">
+  <img src="./Images/CollectionVC.png" width="600" height="400" title="StoryBoard ID">
+</p>
