@@ -28,3 +28,15 @@ struct SampleData {
 ##### ```func generateData()``` is used for geneerating the data 
 
 ## StoryBoard Configuration
+<p align="center">
+  <img src="./Images/StoryBoard.png" width="500" height="400" title="Initial VC">
+</p>
+
+- TableViewController embedded in Navigation Controller
+- Navigation Controller is the Initial Controlller
+- Inserted label in TableViewCell and details VC
+- Added a button to dismiss the current view => details VC
+- TableViewController has a custom class => SampleTableViewController
+- TableViewCell has a custom class => SampleTableViewCell => NOTE: I don't even know I need it
+- Details VC had a custom class => SampleDetailVC
+- Segue Identifier from the tableView to details VC => showDetail
