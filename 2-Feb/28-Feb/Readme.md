@@ -147,5 +147,7 @@ class SampleDetailVC: UIViewController {
       return searchController.isActive && !isSearchBarEmpty
     }
  ```
- - 
+ - By initializing UISearchController with a nil value for searchResultsController, you’re telling the search controller that you want to use the same view you’re searching to display the results.
+ - isSearchBarEmpty returns true if the text typed in the search bar is empty; otherwise, it returns false
+ - computed property to determine if you are currently filtering results or not => ```isFiltering```
  
