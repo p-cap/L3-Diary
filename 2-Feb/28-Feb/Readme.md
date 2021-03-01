@@ -91,3 +91,18 @@ class SampleTableViewController: UITableViewController {
 ```
 - numberOfSections, numberOfRowsInSection, cellForRowAt are required instance methods for a tableview
 - prepare instance method was used so I can transition to details VC
+
+### Emphasis on the segue
+```
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        if let row = tableView.indexPathForSelectedRow?.row {
+            let item = sampleData.generateData()[row]
+            let sampleDetailVC = segue.destination as! SampleDetailVC
+
+            sampleDetailVC.detailData = item.details
+        }
+    }
+```
+- It looks like did not utilize the segue identifier
+- This will be my template moving forward when it comes to segue
