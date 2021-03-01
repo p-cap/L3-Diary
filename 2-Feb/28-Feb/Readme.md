@@ -151,3 +151,34 @@ class SampleDetailVC: UIViewController {
  - isSearchBarEmpty returns true if the text typed in the search bar is empty; otherwise, it returns false
  - computed property to determine if you are currently filtering results or not => ```isFiltering```
  
+ ### The extension SampleTableViewController
+ ```
+ extension SampleTableViewController: UISearchResultsUpdating {
+  func updateSearchResults(for searchController: UISearchController) {
+    
+    let searchBar = searchController.searchBar
+    filterContentForSearchText(searchBar.text!)
+  }
+}
+ ```
+ - updateSearchResults(for:) is the one and only method that your class must implement to conform to the UISearchResultsUpdating protocol
+
+### Search Bar attributes
+```override func viewDidLoad() {
+        super.viewDidLoad()
+
+        searchController.searchResultsUpdater = self
+ 
+        searchController.obscuresBackgroundDuringPresentation = false
+    
+        searchController.searchBar.placeholder = "Search Samples"
+
+        navigationItem.searchController = searchController
+
+        definesPresentationContext = true
+    }
+```
+- UISearchResultsUpdating. With this protocol, UISearchResultsUpdating will inform your class of any text changes within the UISearchBar.
+- useful if you’re using another view controller for your searchResultsController. In this instance, you’ve set the current view to show the results, so you don’t want to obscure your view.
+- New for iOS 11, you add the searchBar to the navigationItem. This is necessary because Interface Builder is not yet compatible with UISearchController
+- by setting definesPresentationContext on your view controller to true, you ensure that the search bar doesn’t remain on the screen if the user navigates to another view controller while the UISearchController is active
