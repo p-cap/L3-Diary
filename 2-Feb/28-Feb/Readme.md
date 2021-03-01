@@ -40,3 +40,54 @@ struct SampleData {
 - TableViewCell has a custom class => SampleTableViewCell => NOTE: I don't even know I need it
 - Details VC had a custom class => SampleDetailVC
 - Segue Identifier from the tableView to details VC => showDetail
+
+## TableView to Detail VC
+```
+class SampleTableViewController: UITableViewController {
+
+  var sampleData = SampleData(sample: "", details: "")
+  
+  override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+  
+  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if isFiltering {
+            return filteredSample.count
+          }
+        return sampleData.generateData().count
+    }
+  
+  
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "sampleCell", for: indexPath) as? SampleTableViewCell else {
+            fatalError("The dequeued cell is not an instance of SampleTableViewCell.")
+        }
+        
+        let info: SampleData
+        
+        if isFiltering {
+            info = filteredSample[indexPath.row]
+        } else {
+            info = sampleData.generateData()[indexPath.row]
+        }
+          
+        cell.sampleLabel.text = info.sample
+        
+        return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        if let row = tableView.indexPathForSelectedRow?.row {
+            let item = sampleData.generateData()[row]
+            let sampleDetailVC = segue.destination as! SampleDetailVC
+
+            sampleDetailVC.detailData = item.details
+        }
+    }
+}
+```
+- numberOfSections, numberOfRowsInSection, cellForRowAt are required instance methods for a tableview
+- prepare instance method was used so I can transition to details VC
