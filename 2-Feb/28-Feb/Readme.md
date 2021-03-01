@@ -106,3 +106,46 @@ class SampleTableViewController: UITableViewController {
 ```
 - It looks like did not utilize the segue identifier
 - This will be my template moving forward when it comes to segue
+
+### Details VC
+
+```
+class SampleDetailVC: UIViewController {  
+    var detailData: String!
+    
+    @IBOutlet var buttonLabel: UIButton!
+    
+    @IBOutlet var detailLabel: UILabel!
+
+    @IBAction func closeVC(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        detailLabel.text = detailData
+        buttonLabel.setTitle("Close", for: .normal)
+    }
+}
+```
+- detailData reeived data from SampleTableViewController
+- ```buttonLabel.setTitle("Close", for: .normal) ``` programmatically changed the title of button
+-  ```detailLabel.text = detailData``` displayed the detail data
+
+## The searching
+```
+  let searchController = UISearchController(searchResultsController: nil)
+  var filteredSample: [SampleData] = []
+    
+    var isSearchBarEmpty: Bool {
+      return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    var isFiltering: Bool {
+      return searchController.isActive && !isSearchBarEmpty
+    }
+ ```
+ - 
+ 
