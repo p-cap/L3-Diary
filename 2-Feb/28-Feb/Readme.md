@@ -182,3 +182,6 @@ class SampleDetailVC: UIViewController {
 - useful if you’re using another view controller for your searchResultsController. In this instance, you’ve set the current view to show the results, so you don’t want to obscure your view.
 - New for iOS 11, you add the searchBar to the navigationItem. This is necessary because Interface Builder is not yet compatible with UISearchController
 - by setting definesPresentationContext on your view controller to true, you ensure that the search bar doesn’t remain on the screen if the user navigates to another view controller while the UISearchController is active
+
+
+.....TO BE CONTINUED..... I need explain the searching further but... I might start with Android
