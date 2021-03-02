@@ -8,4 +8,9 @@ Reference: https://developer.android.com/training/basics/firstapp/creating-proje
   <img src="./Images/SDK Setup.png" width="500" height="500" title="SDK Setup">
 </p>
 
-##### This is vital to understand the files that are within SDK directory
+##### This is vital to understand the files that are within SDK directory => I would need to look into these files
+
+## Downloading missing components / initializing a project to download SDK components
+<p align="center">
+  <img src="./Images/Downloading Components.png" width="500" height="500" title="SDK Setup">
+</p>
