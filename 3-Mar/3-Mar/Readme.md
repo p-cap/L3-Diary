@@ -84,3 +84,20 @@ Section {
 ```
 - I personally like the ```.datePickerStyle(WheelDatePickerStyle())```
 
+### Alert Notification
+<p align="center">
+  <img src="./Images/Alert Notification.png" width="600" height="200" title="My SwiftUI App">
+</p>
+
+```
+.navigationBarItems(trailing:
+    Button(action: calculateBedtime) {
+        Text("Calculate")
+    }.alert(isPresented: $showingAlert) {
+        Alert(title: Text(alertTitle), message: Text(alertMessage),
+              dismissButton: .default(Text("OK")))
+    })
+```
+- Utilizing alert with state declaration to manage on when the alert message appears
+
+
