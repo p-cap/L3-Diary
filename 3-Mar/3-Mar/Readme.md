@@ -100,4 +100,13 @@ Section {
 ```
 - Utilizing alert with state declaration to manage on when the alert message appears
 
+### Prediction, features and target when creating a Machine Learning Project
+<p align="center">
+  <img src="./Images/Prediction.png" width="600" height="200" title="My SwiftUI App">
+</p>
+- The CoffeeRegressor Model Class was created from a csv file  
+- The wake time, estimated sleep time length and sleeptime are the inputs and the target is the number of coffee drinks
+
+
+
 
