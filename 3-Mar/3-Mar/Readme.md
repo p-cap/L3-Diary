@@ -108,6 +108,9 @@ Section {
 - The CoffeeRegressor Model Class was created from a csv file  
 - The wake time, estimated sleep time length and sleeptime are the inputs and the target is the number of coffee drinks
 
-
-
+### Prediction gone wrong
+<p align="center">
+  <img src="./Images/Prediction.png" width="900" height="500" title="My SwiftUI App">
+</p>
+- The project was a tutorial but I tried to put a little spin on it but...the predictions were way off
 
