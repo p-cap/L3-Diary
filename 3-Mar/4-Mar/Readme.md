@@ -161,5 +161,11 @@ curl -X PUT -d '{"FileName":"pcap","Sha1":"pcap Success"}'  -H 'Content-Type: ap
 # DELETE Request
 curl -X "DELETE" http://localhost:5555/delete/test
 ```
-### Note: I will make this more extensible so I can apply optional paramaters
+### Note: I will make this more extensible so I can apply optional paramaters.  
+
+
+#### Now, I will work on the Swiftui Frontend to fetch the data and utilize the searchcontroller I just learned from the other projects
+
+
+
 
