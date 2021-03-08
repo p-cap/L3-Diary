@@ -60,6 +60,7 @@ class Sample: Codable {
 enum CodingKeys: CodingKey {
   case pcap
 }
+
 class Sample: Codable {
   @Published var pcap = ""
     
