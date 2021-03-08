@@ -68,7 +68,7 @@ class Sample: Codable {
         // 1 Get a keyed container from the decoder, this will contain all of the properties in the JSON
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        // 2 Extract the access values from the container using the appropriate type and coding key.
+        // 2 Extract the pcap value from the container using the appropriate type and coding key.
         pcap = try container.decode(String.self, forKey: .pcap)
      }
         
