@@ -70,7 +70,7 @@ class Sample: Codable {
         
         // 2 Extract the access values from the container using the appropriate type and coding key.
         pcap = try container.decode(String.self, forKey: .pcap)
-        }
+     }
         
    func encode(to encoder: Encoder) throws {
   
