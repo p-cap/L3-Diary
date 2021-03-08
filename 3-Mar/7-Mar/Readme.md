@@ -8,7 +8,7 @@ class Sample: ObservableObject {
 ```
 Per apple dcoumentation, "A type of object with a publisher that emits the changed value before the object has changed.    
 By default an ObservableObject synthesizes an objectWillChange publisher that emits the changed value before  
-any of its @Published properties changes"
+any of its @Published properties changes". It is useful when implementing objects across classes
 
 
 # Playing around with Codable protocol
