@@ -27,6 +27,11 @@
 
 #### @Table => The easiest way to set a custom SQL table name is to annotate the entity
 
+#### @Repository =>  A repository is a mechanism for encapsulating storage, retrieval, and search behavior which emulates a collection of objects.
+
+#### @Service => is used with classes that provide some business functionalities
+
+
 ## HIghly used postgres commands 
 ```
 postgres=> \l                 >>>      list all DBs
@@ -82,6 +87,9 @@ insert into sample (sampleName) values ('????');
 insert into sample (sampleName) values ('????');
 ```
 
-
+# Struggles
+### After running the application, it would cause errors after performing a get request ```http://localhost:8080/sample```
+### It turns out my camel casing of my variables inside the Model Class was causing the issue. 
+### After running it the second time, it still didn't work. Apparently, after looking at the stack trace once again, I was missing a default contructor
 
 
