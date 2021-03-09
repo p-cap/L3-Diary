@@ -88,8 +88,7 @@ insert into sample (sampleName) values ('????');
 ```
 
 # Struggles
-### After running the application, it would cause errors after performing a get request ```http://localhost:8080/sample```
-### It turns out my camel casing of my variables inside the Model Class was causing the issue. 
+### After running the application, it would cause errors after performing a get request ```http://localhost:8080/sample``` It turns out my camel casing of my variables inside the Model Class was causing the issue. 
 ### After running it the second time, it still didn't work. Apparently, after looking at the stack trace once again, I was missing a default contructor
 
 
