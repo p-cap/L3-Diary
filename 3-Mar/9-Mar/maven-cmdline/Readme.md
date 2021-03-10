@@ -17,6 +17,7 @@
  
  - ### as a start, you can remove all the build code inside the pom.xml file
  
+ - ### FINAL PROJECT STRUCTURE: 
 <p align="center">
   <img src="./images/maven project structure.png" width="600" height="800" title="Maven Project Structure">
 </p>
