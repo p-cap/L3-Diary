@@ -2,7 +2,7 @@
 
 reference: https://www.geeksforgeeks.org/binary-search/
 
-## Initially, the code was not comping using clang++ because of ``` #include <bits/stdc++.h>``` was not recognized. I created the bits directory and copised the stdcc.h source code on github  
+## Initially, the code was not compiling using clang++ because of ``` #include <bits/stdc++.h>``` was not recognized. I created the bits directory and copised the stdcc.h source code on github  
 
 
 ## Source code
