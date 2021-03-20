@@ -69,6 +69,7 @@ Meta.defaultProps = {
 # Creating the Nav
 - utilize ```import Link from 'next/link'`` for navigation
 - After renaming About.js, it looks like ```Link``` looks for the file in the page directory
+- Nav was declared in Layout.js which was used to wrap _app.js
 ```
 import Link from 'next/link'
 
@@ -92,5 +93,29 @@ const Nav = () => {
 
 export default Nav
 ```
-
+# Conditional JSX
+- h1 was className='title'
+- <style jsx>.....</style> showed the conditional rendering
+```
+const Header = () => {
+    const pcap = 7
+    return (
+        <div>
+            <h1 className='title'>
+                <span>Pcap Dev</span> News
+            </h1>
+            <p className={headerStyles.description}>
+                Keep with what I'm doing
+            </p>
+            <style jsx> 
+            {`
+                .title {
+                    color: ${ pcap > 3 ? 'green' : 'blue'}
+                }  
+            `}
+            </style>
+        </div>
+    )
+}
+```
  
