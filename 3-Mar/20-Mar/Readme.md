@@ -48,8 +48,9 @@ export default function handler(req, res) {
 }
 ```
 #### imported articles from data.js
-## NOTE: If you rename index.js to another filename, IT WILL NOT WORK
-## http://localhost:port/api/articles => you do not need the index.js file in the path when calling the api
+#### NOTE: If you rename index.js to another filename, IT WILL NOT WORK
+#### http://localhost:port/api/articles => you do not need the index.js file in the path when calling the api.   
+
 
 # Display the fetched data via API call
 1. Utilize the ```getStaticProps``` to fetch data
