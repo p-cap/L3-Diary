@@ -2,7 +2,7 @@
 
 #### Thanks to my daughter for allowing me to help her to work on her project
 
-#```<script>```
+# ```<script>```
 
 ### ```document.getElementById("datetime").innerHTML = dt.toLocaleDateString();```		
 - looks for the element with an id="datetime"
