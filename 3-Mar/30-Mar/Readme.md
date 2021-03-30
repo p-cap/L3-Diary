@@ -59,7 +59,7 @@ total =  t2 - t1
 print 'Scanning Completed in: ', total
 ```
 
-### /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/socket.py
+### /Library/Developer/........./Versions/3.8/lib/python3.8/socket.py
 - Looking at the source code of the module was very helpful
 - It helped me see if the socket moduel would work on my system
 
