@@ -14,8 +14,8 @@ Reference: https://resources.infosecinstitute.com/topic/python-for-network-penet
 ```/ #```
 - On the container shell, we can type any impacket script name
 
+- Using mssqlclient.py
 ```mssqlclient.py ARCHETYPE/sql_svc@10.10.10.27 -windows-auth```
-- below is the output
 ```/opt/venv/lib/python2.7/site-packages/OpenSSL/crypto.py:14: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
   from cryptography import utils, x509
 Impacket v0.9.23.dev1+20210315.121412.a16198c - Copyright 2020 SecureAuth Corporation
