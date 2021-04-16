@@ -1,5 +1,13 @@
 ### Gets the SHA256 hash of a file and compares it with the file that is downloaded from the site
 
+- 7 uses getopt function to grab the options used in the python application. If the option has a colon, a argument is required
+- 9-10 prints the python script usage if no arguments / options are used in the script
+- 12 the opts variable contains a tuple of option and argument 
+- 18 -22 would save the argument of the options and pass it to....
+- 24 used shasum native command 
+- 24 also utilized subprocess.run to the native command
+- 26 puts the sdout of the native command in an array
+- 28-30 iterates through the array and looks for an OK which matches one of the hashes in the hashfile
 
 ```
   1 import subprocess
