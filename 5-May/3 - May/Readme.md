@@ -46,11 +46,29 @@ import yara
 rules = yara.compile(filepath='./sample_rule')
 
 # opens the file
-with open('./test', 'rb') as f:
+with open('./sample_file', 'rb') as f:
   matches = rules.match(data=f.read())
 
 # prints out the matches in an array
 print(matches)
+```
+
+```
+sample_rule
+
+rule Sample {
+	
+  strings:
+    $sample_string = "sup"
+
+  condition:
+    $sample_string   
+}
+```
+```
+sample_file
+
+Wassup????
 ```
 - ```python3 first-yara.py```
 - OUTPUT: [Sample]
