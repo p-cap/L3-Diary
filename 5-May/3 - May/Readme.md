@@ -74,4 +74,43 @@ Wassup????
 - OUTPUT: [Sample]
 - OUTPUT ANALYSIS: The output shows an array of triggered rules
 
+## Using callbacks => callback functions should expect a single parameter of dictionary type
+```
+import yara
 
+## callback function that prints the data in json format
+def mycallback(data):
+  print(data)
+  return yara.CALLBACK_CONTINUE
+ 
+## don't forget.....compile the rule first...not the directory that stores the rulesrules = yara.compile('./myrules/filename_rule')
+rules = yara.compile('./callback_rule')
+
+## use match against the file of interest
+## setting "which_callbacks" will determine when the callback is called, in this case, when CALLBACK_MATCHES
+## Your callback function should expect a single parameter of dictionary type
+# utilize the store rule 
+matches = rules.match('./callback_file', callback=mycallback, which_callbacks=yara.CALLBACK_MATCHES)
+```
+```
+callback_rule
+
+rule Callback_Rule {
+  strings: 
+    $callback_string = "findme"
+
+  condition:
+    $callback_string
+
+}
+```
+
+```
+callback_file
+
+cooadnsonaIOCN
+CAKNSDKNACSL
+XAmksakfindmekaxCXXMamp
+```
+- OUTPUT: {'matches': True, 'rule': 'Callback_Rule', 'namespace': 'default', 'tags': [], 'meta': {}, 'strings': [(35, '$callback_string', b'findme')]}
+- OUTPUT ANALYSIS: This data is great for data analysis
